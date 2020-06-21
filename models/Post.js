@@ -20,9 +20,6 @@ Post.init(
       post_content: {
         type: DataTypes.STRING,
         allowNull: false,
-        validate: {
-          isURL: true
-        }
       },
       // conversely defined as the foreign key
       user_id: {
