@@ -8,14 +8,15 @@ router.get('/', (req, res) => {
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
-      res.status(500).json(err);
+      res.status(400).json(err);
     });
 });
 
 router.get('/:id', (req, res) => {
     Comment.findAll({
        where: {
-          post_id: req.params.id
+          post_id: req.params.id,
+          user_id: req.params.id
        }
     })
        .then(dbCommentData => res.json(dbCommentData))
@@ -30,7 +31,7 @@ router.post('/', withAuth, (req, res) => {
     if (req.session) {
         Comment.create({
             comment_text: req.body.comment_text,
-            user_id: req.body.user_id,
+            user_id: req.session.user_id,
             post_id: req.body.post_id
           })
             .then(dbCommentData => res.json(dbCommentData))

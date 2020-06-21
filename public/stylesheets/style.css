@@ -122,7 +122,7 @@
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: darkslateblue;
   }
   
   .comment .meta {
@@ -132,7 +132,7 @@
   }
   
   #comment-body {
-    opacity: 80%;
+    opacity: 30%;
   }
   
   .submit-btn {
