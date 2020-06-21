@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     .then(dbUserData => res.json(dbUserData))
     .catch(err => {
         console.log(err);
-        res.status(500).json.apply(err);
+        res.status(500).json(err);
     });
 });
 
@@ -66,6 +66,10 @@ router.post('/', (req, res) => {
           res.json(dbUserData);
         });
     })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+     });
 });
 
 // POST /api/users/login
