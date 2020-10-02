@@ -1,11 +1,15 @@
 <article class="post">
-  <div class="title">
-    <h3>{{title}}</h3>
-    <p>({{post_content}})</p>
-  </div>
-  <div class="meta">
-    Posted by <strong>{{user.username}}</strong> on {{format_date created_at}}
-    |
-    <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>  
-  </div>
+        <div class="title card bg-light">
+            <div class="card-header bg-dark">
+                <a class="card-title font-weight-bold text-decoration-none text-info" href="/post/{{id}}" target="_blank">{{title}}</a>
+            </div>
+            <div class="card-body">
+                <div class="card-text">{{post_content}}</div>
+            </div>
+        <div class="meta card-footer text-right">
+            by {{user.username}} on {{format_date created_at}}
+            |
+            <a class="text-info" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
+    </div>
 </article>

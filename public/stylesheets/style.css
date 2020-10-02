@@ -7,17 +7,17 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    color: white;
+    color: darkslateblue;
     background-color: mediumturquoise;
   }
 
   p {
-    color: whitesmoke;
+    color:white;
   }
   
   a {
     text-decoration: none;
-    color:white;
+    color: white;
     font-weight: bold;
     transition: color .1s;
   }
@@ -121,7 +121,7 @@
   }
   
   .comment:nth-child(odd) {
-    background-color: darkslateblue;
+    background-color:white;
   }
   
   .comment .meta {
@@ -154,10 +154,10 @@
     font-size: 110%;
   }
   
-  .post {
+  /* .post {
     margin: auto;
     justify-content: center;
     background-color: darkslateblue;
     border-radius: 10px;
     opacity: 80%;
-  }
+  } */
