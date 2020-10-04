@@ -18,13 +18,13 @@ Sign-up form where you can sign-up or login
 ![Sign-Up](./public/assets/signup_form.png)
 
 Homepage that shows all posts and comments
-![Homepage](./public/assets/homepage.png)
+![Homepage](./public/assets/allposts.png)
 
 My Dashboard that shows my posts and option to create a new post
-![My Dashboard](./public/assets/mydashboard.png)
+![My Dashboard](./public/assets/myposts.png)
 
-Option to Edit Post (Update or Delete)
-![Edit Post](./public/assets/editpost.png)
+Add a comment
+![Edit Post](./public/assets/comment.png)
 
 
 ## Questions
